@@ -4,9 +4,7 @@ from datetime import date
 import urllib.parse
 from dotenv import load_dotenv
 import os
-
 import typing
-
 import re
 
 
@@ -28,11 +26,11 @@ async def print_message(event):
     print(event.content)
     if event.content == ('good morning bot'):
         await event.message.respond(f'Jolly good morning to you govnah {event.author.mention}')
-    if event.content == ('good morning Botfrag'):
+    if event.content == ('good morning Bot'):
         await event.message.respond(f'Rise and shine! {event.author.mention}')
     if event.content == ('good morning'):
         await event.message.respond(f'Coffee or Tea {event.author.mention}?')
-    if event.content == ('Good morning '):
+    if event.content == ('Good morning'):
         await event.message.respond(f'Morning{event.author.mention}!')
     if event.content == ('Good job bot'):
         await event.message.respond(f'I am at your service {event.author.mention}')
